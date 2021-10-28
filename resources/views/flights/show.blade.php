@@ -5,11 +5,11 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Eztravel Details</h1>
+                    <h1>Flights Details</h1>
                 </div>
                 <div class="col-sm-6">
                     <a class="btn btn-default float-right"
-                       href="{{ route('eztravels.index') }}">
+                       href="{{ route('flights.index') }}">
                         Back
                     </a>
                 </div>
@@ -22,11 +22,10 @@
 
             <div class="card-body">
                 <div class="row">
-                    @include('eztravels.show_fields')
+                    @include('flights.show_fields')
                 </div>
             </div>
 
         </div>
     </div>
-
 @endsection

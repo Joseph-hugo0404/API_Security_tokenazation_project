@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Eztravel;
+use App\Models\Flights;
 
-class CreateEztravelRequest extends FormRequest
+class UpdateFlightsRequest extends FormRequest
 {
 
     /**
@@ -25,6 +25,8 @@ class CreateEztravelRequest extends FormRequest
      */
     public function rules()
     {
-        return Eztravel::$rules;
+        $rules = Flights::$rules;
+        
+        return $rules;
     }
 }

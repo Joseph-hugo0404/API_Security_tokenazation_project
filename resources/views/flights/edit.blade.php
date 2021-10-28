@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
-                    <h1>Booking</h1>
+                    <h1>Edit Flights</h1>
                 </div>
             </div>
         </div>
@@ -17,29 +17,21 @@
 
         <div class="card">
 
-            {!! Form::open(['route' => 'eztravels.store']) !!}
+            {!! Form::model($flights, ['route' => ['flights.update', $flights->id], 'method' => 'patch']) !!}
 
             <div class="card-body">
-
                 <div class="row">
-                    @include('eztravels.fields')
+                    @include('flights.fields')
                 </div>
-
             </div>
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('eztravels.index') }}" class="btn btn-default">Cancel</a>
+                <a href="{{ route('flights.index') }}" class="btn btn-default">Cancel</a>
             </div>
 
-            {!! Form::close() !!}
+           {!! Form::close() !!}
 
         </div>
     </div>
 @endsection
-
-<style>
-    h1{
-        color: #FF6700;
-    }
-    </style>

@@ -59,9 +59,3 @@
     {!! Form::label('age', 'Age:') !!}
     {!! Form::number('age', null, ['class' => 'form-control']) !!}
 </div>
-
-<!-- Travel Class Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('travel_class', 'Travel Class:') !!}
-    {!! Form::text('travel_class', null, ['class' => 'form-control','maxlength' => 30,'maxlength' => 30]) !!}
-</div>

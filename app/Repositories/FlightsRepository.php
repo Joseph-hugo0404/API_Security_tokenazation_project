@@ -2,16 +2,16 @@
 
 namespace App\Repositories;
 
-use App\Models\Eztravel;
+use App\Models\Flights;
 use App\Repositories\BaseRepository;
 
 /**
- * Class EztravelRepository
+ * Class FlightsRepository
  * @package App\Repositories
- * @version October 26, 2021, 5:54 am UTC
+ * @version October 28, 2021, 12:34 am UTC
 */
 
-class EztravelRepository extends BaseRepository
+class FlightsRepository extends BaseRepository
 {
     /**
      * @var array
@@ -23,8 +23,7 @@ class EztravelRepository extends BaseRepository
         'departure_date',
         'arrival_date',
         'passenger_name',
-        'age',
-        'travel_class'
+        'age'
     ];
 
     /**
@@ -42,6 +41,6 @@ class EztravelRepository extends BaseRepository
      **/
     public function model()
     {
-        return Eztravel::class;
+        return Flights::class;
     }
 }

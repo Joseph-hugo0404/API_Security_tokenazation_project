@@ -96,18 +96,6 @@
         "inView": true
     },
     {
-        "name": "travel_class",
-        "dbType": "string,30",
-        "htmlType": "text",
-        "validations": "required|string|max:30|string|max:30",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
         "name": "created_at",
         "dbType": "datetime:nullable",
         "htmlType": "date",

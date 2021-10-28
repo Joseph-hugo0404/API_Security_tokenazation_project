@@ -25,5 +25,4 @@ Route::get('/home', [
     HomeController::class, 'index'
 ])->name('home');
 
-
-Route::resource('eztravels', App\Http\Controllers\EztravelController::class);
+Route::resource('flights', App\Http\Controllers\FlightsController::class);

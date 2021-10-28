@@ -49,7 +49,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
         </ul>
-        <h6>ezTravel</h6>
+        <h6>Flights WhereEver You Go</h6>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown user-menu">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -97,10 +97,10 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-            <b>ezTravel</b> Flights
+            <b>Flights</b> Flights
         </div>
        
-        <strong >&copy; 2021 <a href="https://adminlte.io">ezTravel</a>.</strong> All rights
+        <strong >&copy; 2021 <a href="https://adminlte.io">Flights</a>.</strong> All rights
         reserved.
     </footer>
 </div>
@@ -158,7 +158,7 @@
 <style>
     h6{
         font-size: 40px;
-        color:#FF6700;
+        color:#00ff00;
     }
     </style>
 </html>

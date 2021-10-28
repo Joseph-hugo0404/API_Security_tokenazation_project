@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
-                    <h1>Edit Eztravel</h1>
+                    <h1>Flights</h1>
                 </div>
             </div>
         </div>
@@ -17,20 +17,22 @@
 
         <div class="card">
 
-            {!! Form::model($eztravel, ['route' => ['eztravels.update', $eztravel->id], 'method' => 'patch']) !!}
+            {!! Form::open(['route' => 'flights.store']) !!}
 
             <div class="card-body">
+
                 <div class="row">
-                    @include('eztravels.fields')
+                    @include('flights.fields')
                 </div>
+
             </div>
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('eztravels.index') }}" class="btn btn-default">Cancel</a>
+                <a href="{{ route('flights.index') }}" class="btn btn-default">Cancel</a>
             </div>
 
-           {!! Form::close() !!}
+            {!! Form::close() !!}
 
         </div>
     </div>

@@ -1,8 +1,7 @@
-
 <li class="nav-item">
-    <a href="{{ route('eztravels.index') }}"
-       class="nav-link {{ Request::is('eztravels*') ? 'active' : '' }}">
-        <h1>ezTravel Flight Bookings</h1>
+    <a href="{{ route('flights.index') }}"
+       class="nav-link {{ Request::is('flights*') ? 'active' : '' }}">
+        <p>Flights123</p>
     </a>
 </li>
 
@@ -24,3 +23,5 @@
     
   
     </style>
+
+

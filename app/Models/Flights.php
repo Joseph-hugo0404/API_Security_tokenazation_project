@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * Class Eztravel
+ * Class Flights
  * @package App\Models
- * @version October 26, 2021, 5:54 am UTC
+ * @version October 28, 2021, 12:34 am UTC
  *
  * @property string $origin
  * @property string $destination
@@ -18,15 +18,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property string $arrival_date
  * @property string $passenger_name
  * @property integer $age
- * @property string $travel_class
  */
-class Eztravel extends Model
+class Flights extends Model
 {
-    //use SoftDeletes;
+   // use SoftDeletes;
 
     use HasFactory;
 
-    public $table = 'eztravel';
+    public $table = 'flights';
     
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
@@ -43,8 +42,7 @@ class Eztravel extends Model
         'departure_date',
         'arrival_date',
         'passenger_name',
-        'age',
-        'travel_class'
+        'age'
     ];
 
     /**
@@ -60,8 +58,7 @@ class Eztravel extends Model
         'departure_date' => 'date',
         'arrival_date' => 'date',
         'passenger_name' => 'string',
-        'age' => 'integer',
-        'travel_class' => 'string'
+        'age' => 'integer'
     ];
 
     /**
@@ -77,7 +74,6 @@ class Eztravel extends Model
         'arrival_date' => 'required',
         'passenger_name' => 'required|string|max:255',
         'age' => 'required|integer',
-        'travel_class' => 'required|string|max:30',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
     ];

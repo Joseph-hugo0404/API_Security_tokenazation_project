@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('travellers-api', [TravellersController::class, 'travellersApi']);
+Route::get('flights-api', [FlightsController::class, 'flightsApi']);

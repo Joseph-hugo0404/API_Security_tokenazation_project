@@ -5,11 +5,11 @@
     <div class="col-lg-12">
      <table class="table-striped">
     </div>
-    <div class="col-lg-12">
-        @foreach ($eztravels as $item)
+    <div class="col-lg-12"> 
+        @foreach ($flights as $item)
         <div class="card card-outline card-white">
             <div class="bg">
-            <span class="card-title"><b>Booked Flights &nbsp;</b></span>
+            <span class="card-title"><b>Flights &nbsp;</b></span>
             </div>
             <div class="bg-dark">
               <h4>Origin</h4>  <p> <b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->origin }}</p><hr>
@@ -18,7 +18,7 @@
                <h4>Destination</h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->destination }}</p><hr>
             </div>
             <div class="bg-dark">
-              <h4>Flight No</h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->flight_no }}</p><hr>
+              <h4>Flight Number</h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->flight_no }}</p><hr>
             </div>
             <div class="bg-dark">
              <h4>Departure Date</h4> <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->departure_date }}</p><hr>
@@ -32,9 +32,6 @@
             <div class="bg-dark">
                 <h4> Age </h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->age }}</p><hr>
             </div>
-            <div class="bg-dark">
-                <h4> Travel Class </h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->travel_class }}</p><hr>
-            </div>
      
    @endforeach
     </div>
@@ -43,7 +40,7 @@
 </table>
 <style>
   .bg{
-    background-color: #FF6700;
+    background-color: #2bff00;
   }
   h4{
       position: relative;
@@ -57,7 +54,7 @@
   p{
     position: relative;
     left:100px;
-    border-left: 6px solid #FF6700;
+    border-left: 6px solid #22ff00;
     height: 20px;
     left: 20%;
   }

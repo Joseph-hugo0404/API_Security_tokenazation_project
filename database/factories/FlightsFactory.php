@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Eztravel;
+use App\Models\Flights;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class EztravelFactory extends Factory
+class FlightsFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Eztravel::class;
+    protected $model = Flights::class;
 
     /**
      * Define the model's default state.
@@ -29,7 +29,6 @@ class EztravelFactory extends Factory
         'arrival_date' => $this->faker->word,
         'passenger_name' => $this->faker->word,
         'age' => $this->faker->randomDigitNotNull,
-        'travel_class' => $this->faker->word,
         'created_at' => $this->faker->date('Y-m-d H:i:s'),
         'updated_at' => $this->faker->date('Y-m-d H:i:s')
         ];
