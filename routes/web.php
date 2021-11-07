@@ -26,3 +26,6 @@ Route::get('/home', [
 ])->name('home');
 
 Route::resource('flights', App\Http\Controllers\FlightsController::class);
+
+
+Route::resource('logs', App\Http\Controllers\LogsController::class);

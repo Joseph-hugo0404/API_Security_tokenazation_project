@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\TravellersController;
+use App\Http\Controllers\API\FlightsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,4 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('flights-api', [FlightsController::class, 'flightsApi']);
+Route::post('login',[FlightsController::class,'login']);
+Route::post('register',[FlightsController::class,'register']);
+Route::post('reset-password',[FlightsController::class,'resetPassword']);
