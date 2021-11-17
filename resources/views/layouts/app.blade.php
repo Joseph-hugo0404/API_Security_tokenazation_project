@@ -49,7 +49,6 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
         </ul>
-        <h6>Flights</h6>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown user-menu">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -97,7 +96,7 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-            <b>Flights</b> Flights
+            <b>Flight</b>
         </div>
        
         <strong >&copy; 2021 <a href="https://adminlte.io">Flights</a>.</strong> All rights
@@ -154,11 +153,4 @@
 
 @stack('page_scripts')
 </body>
-
-<style>
-    h6{
-        font-size: 40px;
-        color:#00ff00;
-    }
-    </style>
 </html>

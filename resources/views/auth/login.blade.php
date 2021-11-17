@@ -43,7 +43,7 @@
     <!-- /.login-box-body -->
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">ezTravel</p>
+            <p class="login-box-msg">by: Joseph Hugo</p>
 
             <form method="post" action="{{ url('/login') }}">
                 @csrf
@@ -117,12 +117,12 @@
 
 <style>
     .bg-d{
-     background-color: #FF6700;
-     border-radius: 20px;
+     background-color: #676665;
+     border-radius: 5px;
     }
 
     .login-box-msg{
-        color: #FF6700;
+        color: #6a6867;
         font-size: 30px;
     }
     </style>

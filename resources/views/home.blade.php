@@ -7,32 +7,11 @@
     </div>
     <div class="col-lg-12"> 
         @foreach ($flights as $item)
-        <div class="card card-outline card-white">
+        <div class="card card-outline card-black">
             <div class="bg">
             <span class="card-title"><b>Flights &nbsp;</b></span>
             </div>
-            <div class="bg-dark">
-              <h4>Origin</h4>  <p> <b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->origin }}</p><hr>
-            </div>
-            <div class="bg-dark">
-               <h4>Destination</h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->destination }}</p><hr>
-            </div>
-            <div class="bg-dark">
-              <h4>Flight Number</h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->flight_no }}</p><hr>
-            </div>
-            <div class="bg-dark">
-             <h4>Departure Date</h4> <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->departure_date }}</p><hr>
-            </div>
-            <div class="bg-dark">
-            <h4> Arrival Date </h4> <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->arrival_date }}</p><hr>
-            </div>
-            <div class="bg-dark">
-                <h4> Passenger/s </h4>   <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->passenger_name }}</p><hr>
-            </div>
-            <div class="bg-dark">
-                <h4> Age </h4>  <p><b>&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ $item->age }}</p><hr>
-            </div>
-     
+          </div>
    @endforeach
     </div>
   </div>
@@ -40,7 +19,7 @@
 </table>
 <style>
   .bg{
-    background-color: #2bff00;
+    background-color: #0f0f0f;
   }
   h4{
       position: relative;
@@ -54,7 +33,7 @@
   p{
     position: relative;
     left:100px;
-    border-left: 6px solid #22ff00;
+    border-left: 6px solid #000000;
     height: 20px;
     left: 20%;
   }
@@ -62,7 +41,7 @@
         position: relative;
         left: 360px;
         font-size: 30px;
-        color:white;
+        color:rgb(175, 165, 165);
     }
 
     .card-body{

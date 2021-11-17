@@ -18,7 +18,7 @@ class FlightsController extends Controller {
 
     public $successStatus = 200;
 
-    public function login(){
+    public function login(){ 
     if (Auth::attempt(['username'=> request('username'), 'password' => request('password')])){
         $user = Auth::user();
       

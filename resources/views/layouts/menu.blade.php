@@ -1,7 +1,7 @@
 <li class="nav-item">
     <a href="{{ route('flights.index') }}"
        class="nav-link {{ Request::is('flights*') ? 'active' : '' }}">
-        <p>Flights123</p>
+        <p>Flights123Go</p>
     </a>
 </li>
 
@@ -16,12 +16,14 @@
         padding-right: 5px;
         padding-bottom: 5px;
         font-size: 15px;
+        text-align: center;
         border-radius: 10px;
-        background-color: #FF6700;
-        
-        
-    
-  
+        background-color: #5d5b5b;
+    }
+    .content-header{
+        padding: 20px;
+        margin-left: 400px;
+    }
     </style>
 
 
